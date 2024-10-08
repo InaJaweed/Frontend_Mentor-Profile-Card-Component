@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "firebase": "^10.14.0"
-  }
+	"dependencies": {
+		"firebase": "^10.14.0"
+	},
+	"scripts": {
+		"deploy-profile-card": "firebase deploy --only hosting:frontend-mentor-profile-card-35e5f"
+	}
 }

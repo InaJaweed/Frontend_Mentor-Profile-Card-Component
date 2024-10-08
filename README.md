@@ -27,7 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: <a href="https://frontend-mentor-profile-card-35e5f.web.app/" target="_blank">Click Here</a>
 
 ## My process
 

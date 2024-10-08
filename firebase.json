@@ -1,0 +1,7 @@
+{
+	"hosting": {
+		"site": "frontend-mentor-profile-card-35e5f",
+		"public": ".",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+	}
+}
