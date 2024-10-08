@@ -1,0 +1,91 @@
+:root {
+	--ff-base: 'Kumbh Sans', sans-serif;
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	--clr-bg: hsl(185, 75%, 39%);
+	--clr-crd: hsl(100, 100%, 100%);
+	--fc-regular: hsl(227, 10%, 46%);
+	--fc-heading: hsl(229, 23%, 23%);
+	--fc-temp: hsl(0, 0%, 59%);
+}
+
+body {
+	background-color: var(--clr-bg);
+	font-family: var(--ff-base);
+	font-weight: var(--fw-regular);
+	font-size: 18px;
+	color: var(--fc-regular);
+}
+
+.container {
+	display: grid;
+	justify-content: center;
+	place-content: center;
+	min-height: 100vh;
+	background-image: url(/images/bg-pattern-top.svg),
+		url(/images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: left -180px bottom 350px, right -200px top 400px;
+}
+
+.card {
+	background-color: var(--clr-crd);
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+.card-body {
+	display: grid;
+	gap: 2rem;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.card-content img {
+	border: 3px solid var(--clr-crd);
+	border-radius: 50%;
+	margin-top: -3rem;
+}
+
+.person-info {
+	text-align: center;
+}
+
+.card-info {
+	border-top: 0.1px solid var(--fc-regular);
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.card-info p {
+	font-size: 12px;
+}
+
+.age {
+	color: var(--fc-regular);
+	font-weight: var(--fw-regular);
+}
+
+h1,
+h2 {
+	color: var(--fc-heading);
+	font-weight: var(--fw-bold);
+}
+
+p {
+	letter-spacing: 0.12rem;
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		background-position: right 180px bottom 180px, left 200px top 280px;
+	}
+}
